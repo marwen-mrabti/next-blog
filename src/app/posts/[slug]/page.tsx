@@ -4,8 +4,6 @@ import { getMDXComponent } from "next-contentlayer2/hooks";
 import MDXContent from "@/components/mdx-component";
 import Link from "next/link";
 
-export const runtime = "edge";
-
 export const generateStaticParams = async () =>
 	allPosts.map((post) => ({ slug: post._raw.flattenedPath }));
 

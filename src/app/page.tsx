@@ -3,7 +3,7 @@ import { compareDesc, format, parseISO } from "date-fns";
 import { allPosts, Post } from "contentlayer/generated";
 import MDXContent from "@/components/mdx-component";
 
-export const runtime = "edge";
+
 
 function PostCard(post: Post) {
 	return (
